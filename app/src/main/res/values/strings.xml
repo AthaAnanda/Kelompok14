@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Asthma Deaseas Prediction</string>
+    <string name="app_name">Asthma Disease Prediction</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="belum_punya_akun">Belum punya akun? Daftar</string>
+    <string name="nama">Nama</string>
+    <string name="daftar">Daftar</string>
 </resources>
