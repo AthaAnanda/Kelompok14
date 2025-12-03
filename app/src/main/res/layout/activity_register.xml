@@ -2,42 +2,162 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D7F3E7"
     android:padding="24dp">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etName"
+        <!-- Tombol Back -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←"
+            android:textSize="28sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAFTAR"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- ====================== CARDVIEW FORM ====================== -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/nama"
-            android:inputType="textPersonName" />
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="16dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/white">
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="12dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:layout_marginTop="12dp" />
+                <!-- Nama Lengkap -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="18dp">
 
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Lengkap"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp"
+                        android:background="#000"/>
+                </LinearLayout>
+
+                <!-- NIK -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="18dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="NIK"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp"
+                        android:background="#000"/>
+                </LinearLayout>
+
+                <!-- No. HP -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="18dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="No. HP"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp"
+                        android:background="#000"/>
+                </LinearLayout>
+
+                <!-- Username -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="18dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp"
+                        android:background="#000"/>
+                </LinearLayout>
+
+                <!-- Password -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="1dp"
+                        android:background="#000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tombol Selesai -->
         <Button
             android:id="@+id/btnRegister"
-            android:text="@string/daftar"
-            android:layout_width="match_parent"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp" />
+            android:text="Selesai"
+            android:layout_gravity="center"
+            android:background="@android:color/white"/>
 
     </LinearLayout>
 </ScrollView>
